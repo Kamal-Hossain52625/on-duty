@@ -58,7 +58,7 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-display font-bold text-white flex items-center gap-1"
         >
-          <span>KH</span><span className="text-brand-primary">.</span>
+          <a href="/"><span>KH</span><span className="text-brand-primary">.</span></a>
         </motion.div>
 
         {/* Desktop Menu */}
@@ -202,9 +202,9 @@ const Hero = () => {
 
 const About = () => {
   const stats = [
-    { label: 'Years Experience', value: '5+' },
-    { label: 'Projects Completed', value: '120+' },
-    { label: 'Happy Clients', value: '80+' },
+    { label: 'Years Experience', value: '2+' },
+    { label: 'Projects Completed', value: '20+' },
+    { label: 'Happy Clients', value: '10+' },
   ];
 
   return (
@@ -591,7 +591,7 @@ const Contact = () => {
                   placeholder="Tell me about your project..."
                 />
               </div>
-              <button 
+              <button
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full py-4 bg-brand-primary text-white rounded-xl font-semibold hover:bg-blue-600 transition-all flex items-center justify-center gap-2 disabled:opacity-50"
@@ -620,11 +620,7 @@ const Contact = () => {
                 </motion.div>
               )}
 
-              {!(import.meta as any).env?.VITE_WEB3FORMS_ACCESS_KEY && (
-                <p className="text-[11px] text-gray-500 mt-4 text-center leading-relaxed">
-                  💡 আপনার আসল জিমেইলে মেসেজ পাওয়ার জন্য <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">Web3Forms</a> থেকে ফ্রী Access Key নিয়ে সেটিংস এ <code className="text-brand-primary bg-white/5 px-1 py-0.5 rounded font-mono">VITE_WEB3FORMS_ACCESS_KEY</code> সেট করুন।
-                </p>
-              )}
+              
             </form>
           </motion.div>
         </div>
